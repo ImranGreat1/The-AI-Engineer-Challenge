@@ -1,12 +1,8 @@
 "use client";
 
 import { FormEvent, useEffect, useRef, useState } from "react";
-import { MessageBubble, TypingIndicator } from "@/components/MessageBubble";
-import {
-  createMessage,
-  streamChatReply,
-  type ChatMessage,
-} from "@/lib/chat";
+import { MessageBubble, TypingIndicator } from "./MessageBubble";
+import { createMessage, streamChatReply, type ChatMessage } from "../lib/chat";
 
 const STARTER_PROMPTS = [
   "I'm feeling overwhelmed today. Can you help me reset?",
